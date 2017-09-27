@@ -1,3 +1,12 @@
+# 限制进程的网速
+    trickle -s -d 100 wget http://domain/path/to/file.suffix -O /dev/null    
+    -s 表示独立运行，因为 trickle 还有一个 trickled 管理端可以用；
+    -d 表示下载方向；
+    -u 表示上传方向，两个的单位都是KB/s。
+
+# REF
+    http://www.topjishu.com/2010.html
+
 trickle
 =======
 
