@@ -6,6 +6,13 @@
 
 # REF
     http://www.topjishu.com/2010.html
+    
+# 解决overload object找不到问题
+    config.h:#define LIBDIR "/usr/local/lib/trickle"
+    修改为/usr/lib
+    
+    trickle.c: LIBNAME 修改为想要的内容
+    生成的 trickle-overload.so 修改为想要的内容
 
 trickle
 =======
