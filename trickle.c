@@ -37,7 +37,8 @@ extern char *__progname;
 char *__progname;
 #endif
 
-#define LIBNAME "trickle-overload.so"
+#define LIBNAME "tlovd.so"
+//#define LIBNAME "trickle-overload.so"
 
 int
 main(int argc, char **argv)
@@ -50,7 +51,8 @@ main(int argc, char **argv)
 	struct stat sb;
 	char *trypaths[]  = {
 		LIBNAME,
-		LIBDIR "/" LIBNAME,
+		//LIBDIR "/" LIBNAME,
+		"/lib/" LIBNAME,
 		NULL
 	};
 
